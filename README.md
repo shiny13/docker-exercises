@@ -4,8 +4,11 @@ Some docker exercises just to learn the technology
 ## Some use commands  
 Pull a docker image from a repo: `docker pull <name>:<version>`  
 Example 1: `docker pull node:16.15.1`  [It will pull a specific version of the image]  
-Example 1: `docker pull node:latest` [It will pull the latest version at that time]   
-Example 1: `docker pull node` [It will be the latest by default]  
+Example 2: `docker pull node:latest` [It will pull the latest version at that time]   
+Example 3: `docker pull node` [It will be the latest by default]  
+Example 4: `docker pull node:alpine` [It will pull the latest from alpine's node]  
+Example 5: `docker pull node:16.15.1-alpine` [It will pull the specific version from alpine's node]  
+<strong>Note:</strong> The smallest image here will be node:16.15.1-alpine or node:alpine as it will use a bare minimum alpine image. Its best to use a versioned image so we have maximum control of the version and we don't break any changes if alpine updates their new image and introduces any breaking changes.  
 
 Checking the list of docker containers: `docker ps`
 
