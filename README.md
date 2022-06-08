@@ -1,7 +1,12 @@
 # docker-exercises
 Some docker exercises just to learn the technology
 
-## Some use commands
+## Some use commands  
+Pull a docker image from a repo: `docker pull <name>:<version>`  
+Example 1: `docker pull node:16.15.1`  [It will pull a specific version of the image]  
+Example 1: `docker pull node:latest` [It will pull the latest version at that time]   
+Example 1: `docker pull node` [It will be the latest by default]  
+
 Checking the list of docker containers: `docker ps`
 
 Checking the list of docker images: `docker image ls`
