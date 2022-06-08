@@ -37,3 +37,6 @@ Here the user must have a Dockerfile file declared with the relevant commands th
 The `-t user-service-api:16.15.1` is responsible for assigning the tag user-service-api and the version 16.15.1 to it.  
 the dot `.` instructs which directory to look for the Dockerfile, in this case it is the current directory so it is a dot, or it can also be an actual full/relative directory (whatever makes sense for your use case)
 
+Tag an image in docker [useful before pushing it to docker hub]: `docker tag <source-image-name>:<tag-version> <username>/<application-name>:<tag-version>`   
+Example: `docker tag user-service-api:16.15.1 shahalamagilent/user-api:16.15.1`  
+
