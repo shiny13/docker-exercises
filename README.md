@@ -22,8 +22,8 @@ Example: `docker run --name user-api -d -p 3000:3000 user-service-api:16.15.1`
 * `-p 3000:3000` is used to assign port 3000 form the server machine to the container's port 3000, so it can be accessible by the user
 *  `user-service-api:16.15.1` could have also be written as `user-service-api:latest` or `user-service-api`. This parameter tells the container to use a specific image and assign a version number, if version is not assigned, then it won't have a version. If the version 'latest' is assigned, then it will use that as version, but the name will be over-written and another image will be created if a new image with the same version is created.  
 
-Make a new docker image: `docker build -t <name>:<version> .`
-Example: `docker build -t user-service-api:16.15.1 .`
+Make a new docker image: `docker build -t <name>:<version> .`  
+Example: `docker build -t user-service-api:16.15.1 .`  
 <strong>Description:</strong>  
 Here the user must have a Dockerfile file declared with the relevant commands they want to use to create the docker image.  
 The `-t user-service-api:16.15.1` is responsible for assigning the tag user-service-api and the version 16.15.1 to it.  
